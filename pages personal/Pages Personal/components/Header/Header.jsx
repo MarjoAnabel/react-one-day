@@ -1,12 +1,15 @@
 import React from 'react'
 
-export const Header = (props) => {
-    return (
+
+export class Header extends React.Component {
+    render () {
+          return (
          <div className='App'>
             <h2>Header</h2>
-          <p>{props.app} { props.app1} , {props.app2}, {props.app3}, {props.app4}</p>
+          <p>{this.props.app} {this.props.app1} , {this.props.app2}, {this.props.app3}, {this.props.app4}</p>
     </div>
   
     )
+    }
    
    }
